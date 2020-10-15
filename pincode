@@ -1,10 +1,12 @@
 #!/bin/bash -x
 read -p "enter the pincode " pin
 shopt -s extglob
+pin1=A400088 #this will not valid
+pin2=400088B #this will not vail
 pat='^[0-9]{6}$'
 if [[ $pin =~ $pat ]]
 then 
-	echo "yes"
+	echo "valid"
 else
- echo "no"
+ echo "not valid"
 fi
