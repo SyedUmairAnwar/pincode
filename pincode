@@ -1,1 +1,10 @@
-welcome to the pincode rigix
+#!/bin/bash -x
+read -p "enter the pincode " pin
+shopt -s extglob
+pat='^[0-9]{6}$'
+if [[ $pin =~ $pat ]]
+then 
+	echo "yes"
+else
+ echo "no"
+fi
